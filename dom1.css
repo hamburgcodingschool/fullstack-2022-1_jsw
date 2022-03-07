@@ -1,0 +1,17 @@
+.uichange {
+    color: #0000ff;
+    background-color: yellow;
+    font-size: 2em;
+}
+#content {
+    border: 1px solid #000;
+    padding: 20px;
+    width: 300px;
+}
+.specialParagraph {
+    margin-bottom: 0;
+}
+#btDisplay {
+    width: 340px;
+
+}
