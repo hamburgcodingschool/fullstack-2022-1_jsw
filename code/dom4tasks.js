@@ -12,6 +12,38 @@ if (values!=="") {
     for (let task of arraysTasks) {
         ulTasks.innerHTML+=`<li><span>${task}</span> <button type="button">X</button></li>`;
     }
+    buttonEvents();
+    spanEvents();
+}
+
+function buttonEvents() {
+    let buttons=document.querySelectorAll("#listOfTasks button");
+    for (let button of buttons) {
+        button.addEventListener("click", function() {
+            // console.log("Yes");
+            this.parentElement.remove();
+
+            let task=this.previousElementSibling.textContent;
+            let position=arraysTasks.indexOf(task);
+            arraysTasks.splice(position, 1);
+            // console.log(arraysTasks);
+            localStorage.setItem("tasks",JSON.stringify(arraysTasks));
+        });
+    }
+}
+function spanEvents() {
+    let spans=document.querySelectorAll("#listOfTasks span");
+    for (let span of spans) {
+        span.addEventListener("click", function() {
+            if (this.classList.contains("completed")) {
+                this.classList.remove("completed");
+                this.nextElementSibling.disabled=false;
+            } else {
+                this.classList.add("completed");
+                this.nextElementSibling.disabled=true;
+            }
+        });
+    }
 }
 
 function insertTask() {
@@ -42,31 +74,8 @@ function insertTask() {
 
         // ulTasks.innerHTML+="<li>"+task+"</li>";
         ulTasks.innerHTML+=`<li><span>${task}</span> <button type="button">X</button></li>`;
-        let buttons=document.querySelectorAll("#listOfTasks button");
-        for (let button of buttons) {
-            button.addEventListener("click", function() {
-                // console.log("Yes");
-                this.parentElement.remove();
-
-                let task=this.previousElementSibling.textContent;
-                let position=arraysTasks.indexOf(task);
-                arraysTasks.splice(position, 1);
-                // console.log(arraysTasks);
-                localStorage.setItem("tasks",JSON.stringify(arraysTasks));
-            });
-        }
-        let spans=document.querySelectorAll("#listOfTasks span");
-        for (let span of spans) {
-            span.addEventListener("click", function() {
-                if (this.classList.contains("completed")) {
-                    this.classList.remove("completed");
-                    this.nextElementSibling.disabled=false;
-                } else {
-                    this.classList.add("completed");
-                    this.nextElementSibling.disabled=true;
-                }
-            });
-        }
+        buttonEvents();
+        spanEvents();
     }
     taskField.value="";
     taskField.focus();

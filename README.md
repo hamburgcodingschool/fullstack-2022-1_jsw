@@ -3,7 +3,7 @@
 
 ### ✏️ Homework
 
-- Homework will be posted here
+- [JavaScript exercises](https://github.com/hamburgcodingschool/fullstack-2022-1_jsw/blob/main/homework/JavaScript_exercises)
 
 ### 📄 Docs
 
