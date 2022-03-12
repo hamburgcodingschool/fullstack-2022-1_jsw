@@ -1,0 +1,9 @@
+#listOfTasks span {
+    cursor: pointer;
+    -ms-user-select: none; /* for Internet Explorer support */
+    -webkit-user-select: none; /* for Safari support */
+    user-select: none;
+}
+.completed {
+    text-decoration: line-through;
+}

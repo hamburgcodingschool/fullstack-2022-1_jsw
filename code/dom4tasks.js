@@ -1,13 +1,24 @@
+let form=document.querySelector("#formTasks");
 let buttonInsert=document.querySelector("#btInsert");
 let taskField=document.querySelector("#task");
 let ulTasks=document.querySelector("#listOfTasks");
+let arraysTasks=[]; /* empty array */
+
+let values=localStorage.getItem("tasks");
+console.log(values);
+if (values!=="") {
+    arraysTasks=JSON.parse(values);
+    console.log(arraysTasks);
+    for (let task of arraysTasks) {
+        ulTasks.innerHTML+=`<li><span>${task}</span> <button type="button">X</button></li>`;
+    }
+}
 
 function insertTask() {
     let task=taskField.value.trim();
     console.log(task);
     if (task==="") {
         alert("You must provide a task!");
-        taskField.focus();
     } else {
         // <li>task</li>
         // let listItem=document.createElement("li"); /* <li></li> */
@@ -23,17 +34,45 @@ function insertTask() {
         // listItem.appendChild(button);
         // ulTasks.appendChild(listItem);
 
+        /* API - Application Programming Interface */
+        /* Storage API */
+        arraysTasks.push(task);
+        // console.log(arraysTasks);
+        localStorage.setItem("tasks",JSON.stringify(arraysTasks));
+
         // ulTasks.innerHTML+="<li>"+task+"</li>";
-        ulTasks.innerHTML+=`<li>${task} <button type="button">X</button></li>`;
+        ulTasks.innerHTML+=`<li><span>${task}</span> <button type="button">X</button></li>`;
         let buttons=document.querySelectorAll("#listOfTasks button");
         for (let button of buttons) {
             button.addEventListener("click", function() {
                 // console.log("Yes");
                 this.parentElement.remove();
+
+                let task=this.previousElementSibling.textContent;
+                let position=arraysTasks.indexOf(task);
+                arraysTasks.splice(position, 1);
+                // console.log(arraysTasks);
+                localStorage.setItem("tasks",JSON.stringify(arraysTasks));
             });
         }
-        taskField.value="";
-        taskField.focus();
+        let spans=document.querySelectorAll("#listOfTasks span");
+        for (let span of spans) {
+            span.addEventListener("click", function() {
+                if (this.classList.contains("completed")) {
+                    this.classList.remove("completed");
+                    this.nextElementSibling.disabled=false;
+                } else {
+                    this.classList.add("completed");
+                    this.nextElementSibling.disabled=true;
+                }
+            });
+        }
     }
+    taskField.value="";
+    taskField.focus();
 }
-buttonInsert.addEventListener("click",insertTask);
+// buttonInsert.addEventListener("click",insertTask);
+form.addEventListener("submit",function(event) {
+    event.preventDefault();
+    insertTask();
+});
