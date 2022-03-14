@@ -1,0 +1,49 @@
+{
+    "coord": {
+        "lon": -8.611,
+        "lat": 41.1496
+    },
+    "weather": [
+        {
+            "id": 300,
+            "main": "Drizzle",
+            "description": "chuvisco fraco",
+            "icon": "09d"
+        },
+        {
+            "id": 701,
+            "main": "Mist",
+            "description": "nevoeiro",
+            "icon": "50d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 13.18,
+        "feels_like": 13.01,
+        "temp_min": 12.8,
+        "temp_max": 13.73,
+        "pressure": 1030,
+        "humidity": 94
+    },
+    "visibility": 2300,
+    "wind": {
+        "speed": 3.6,
+        "deg": 210
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1645026851,
+    "sys": {
+        "type": 2,
+        "id": 2020703,
+        "country": "PT",
+        "sunrise": 1644996489,
+        "sunset": 1645034950
+    },
+    "timezone": 0,
+    "id": 2735943,
+    "name": "Porto",
+    "cod": 200
+}

@@ -1,0 +1,39 @@
+{
+    "persons": [
+        {
+            "id": 1,
+            "name": "Pedro Remoaldo",
+            "age": 25,
+            "job": "IT",
+            "address": {
+                "street": "Almond Street, 56",
+                "city": "New York",
+                "country": "USA"
+            },
+            "contacts": {
+                "phonenumber": [
+                    543425262,
+                    223123122
+                ],
+                "email": "premoaldo@gmail.com"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Toti Barches",
+            "age": 22,
+            "job": "Film director",
+            "address": {
+                "street": "Filmstrasse, 89",
+                "city": "Berlin",
+                "country": "Germany"
+            },
+            "contacts": {
+                "phonenumber": [
+                    32429364234
+                ],
+                "email": "totibarches@gmail.com"
+            }
+        }
+    ]
+}

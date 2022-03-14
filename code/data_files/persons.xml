@@ -1,0 +1,32 @@
+<?xml version="1.0"?> <!-- pragma -->
+<!-- root element -->
+<persons>
+    <person id="1">
+        <name>Pedro Remoaldo</name>
+        <age>25</age>
+        <job>IT</job>
+        <address>
+            <street>Almond Street, 56</street>
+            <city>New York</city>
+            <country>USA</country>
+        </address>
+        <contacts>
+            <phonenumber>543425262</phonenumber>
+            <email>premoaldo@gmail.com</email>
+        </contacts>
+    </person>
+    <person id="2">
+        <name>Toti Barches</name>
+        <age>22</age>
+        <job>Film Director</job>
+        <address>
+            <street>Filmstrasse, 89</street>
+            <city>Berlin</city>
+            <country>Germany</country>
+        </address>
+        <contacts>
+            <phonenumber>32429364234</phonenumber>
+            <email>totibarches@gmail.com</email>
+        </contacts>
+    </person>
+</persons>
