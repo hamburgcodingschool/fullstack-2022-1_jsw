@@ -1,5 +1,6 @@
 import data from "./data_files/countries.json" assert { type: 'json'};
 let listCountries = data.countries;
+console.log(listCountries.length);
 // list the name of each country
 // 3 alternatives using 3 different for loops
 // for (let country of listCountries) {
