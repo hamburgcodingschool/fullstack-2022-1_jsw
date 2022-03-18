@@ -119,7 +119,6 @@ Functional programming
 
 [flatMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap)
 
-
 - 5th session
 
 [Eloquent JavaScript](https://eloquentjavascript.net/)
@@ -141,6 +140,13 @@ Fetch API
 [Using the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 [Fetch basic concepts](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Basic_concepts)
 [fetch()](https://developer.mozilla.org/en-US/docs/Web/API/fetch)
+
+- 6th session
+
+[JSONPlaceHolder Fake REST API](https://jsonplaceholder.typicode.com/)
+[Postman](https://www.postman.com/)
+[Alternative to Postman - Insomnia](https://insomnia.rest/)
+[JSON Server](https://www.npmjs.com/package/json-server)
 
 
 ### ✏️ Homework

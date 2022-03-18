@@ -1,0 +1,24 @@
+#usersTable {
+    border-collapse: collapse;
+}
+#usersTable, #usersTable th, #usersTable td {
+    border: 1px solid #000;
+}
+#usersTable th, #usersTable td {
+    padding: 20px;
+}
+#usersTable thead tr {
+    background-color: black;
+    color: white;
+}
+#usersTable tbody tr:nth-child(even) {
+    background-color: #999;
+}
+#usersTable tbody tr:hover {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+#usersTable tfoot tr {
+    background-color: #ccc;
+}
