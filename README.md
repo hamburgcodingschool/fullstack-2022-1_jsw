@@ -148,6 +148,9 @@ Fetch API
 [Alternative to Postman - Insomnia](https://insomnia.rest/)
 [JSON Server](https://www.npmjs.com/package/json-server)
 
+- 7th session
+
+[JSON Server](https://github.com/typicode/json-server)
 
 ### ✏️ Homework
 
