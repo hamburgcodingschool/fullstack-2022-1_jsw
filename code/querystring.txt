@@ -1,0 +1,21 @@
+https://api.openweathermap.org/data/2.5/weather
+
+?q=Porto,Portugal&appid=6dea5956b591b31aeabd991991a32023&format=adasd
+
+? - querystring
+& - specify parameters
+q= - parameter
+appid= - another parameter
+
+https://www.google.com/search
+?
+start=10
+&q=katja
+&sxsrf=APq-WBvbobe7rq5k2ou_qg899FSeaRIKPg%3A1647882691284
+&source=hp
+&ei=w7E4YqS_D4rga4nvjPAB
+&iflsig=AHkkrS4AAAAAYji_00r4Qvyd98RWYgypG8bjrZcYEdut
+&ved=0ahUKEwjkrMaz2df2AhUK8BoKHYk3Ax4Q4dUDCAc
+&uact=5
+&oq=katja
+&gs_lcp=Cgdnd3Mtd2l6EAMyBQguEIAEMgUIABCABDIFCC4QgAQyBQguEIAEMgUIABCABDIFCC4QgAQyBQguEIAEMgUIABCABDIFCC4QgAQyBQgAEIAEOgQIIxAnOgsILhCABBDHARDRAzoLCC4QgAQQxwEQrwE6BAgAEEM6BAguEENQAFjlBWDXDmgAcAB4AIABeIgBoQSSAQMxLjSYAQCgAQE&sclient=gws-wiz

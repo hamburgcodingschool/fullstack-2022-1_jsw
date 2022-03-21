@@ -1,0 +1,16 @@
+{
+    "persons": [
+        { 
+          "id": 1,
+          "name": "Pedro Remoaldo",
+          "city": "Porto",
+          "country": "Portugal" 
+        },
+        { 
+          "id": 2,
+          "name": "Toti Baches",
+          "city": "Hamburg",
+          "country": "Germany" 
+        }
+    ]
+}

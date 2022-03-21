@@ -159,6 +159,7 @@ Fetch API
 
 - [JSON exercises](https://github.com/hamburgcodingschool/fullstack-2022-1_jsw/blob/main/homework/JSON_exercises.md)
 
+- [REST APIs](https://github.com/hamburgcodingschool/fullstack-2022-1_jsw/blob/main/homework/RESTAPI_exercises.md)
 
 
 ### 📄 Docs
