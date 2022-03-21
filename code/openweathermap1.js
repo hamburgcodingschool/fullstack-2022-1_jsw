@@ -1,9 +1,10 @@
+// DON'T FORGET TO ADD THE APP ID KEY
 function showWeather(city,lat,lon) { 
   if (city!==null && city !==undefined) {
   // if (lat===undefined) {
-    var url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6dea5956b591b31aeabd991991a32023&units=metric&lang=pt`;
+    var url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=&units=metric&lang=pt`;
   } else {
-    var url=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=6dea5956b591b31aeabd991991a32023&units=metric&lang=pt`;
+    var url=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=&units=metric&lang=pt`;
   }
 
   fetch(url)
