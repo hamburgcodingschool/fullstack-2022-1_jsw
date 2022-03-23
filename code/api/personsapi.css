@@ -1,0 +1,24 @@
+#listPersons {
+    border-collapse: collapse;
+}
+#listPersons, #listPersons th, #listPersons td {
+    border: 1px solid #000;
+}
+#listPersons th, #listPersons td {
+    padding: 20px;
+}
+#listPersons thead tr {
+    background-color: black;
+    color: white;
+}
+#listPersons tbody tr:nth-child(even) {
+    background-color: #999;
+}
+#listPersons tbody tr:hover {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+#listPersons tfoot tr {
+    background-color: #ccc;
+}

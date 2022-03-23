@@ -5,8 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Persons API</title>
+    <link rel="stylesheet" href="personsapi.css">
 </head>
 <body>
+    <h2>Persons management</h2>
+    <form id="formPerson">
+        <p><label for="name">Name:</label> <input type="text" id="name"></p>
+        <p><label for="city">City:</label> <input type="text" id="city"></p>
+        <p><label for="country">Country:</label> <input type="text" id="country"></p>
+        <p><input type="submit" id="btSubmit" value="Insert person"></p>
+    </form>
+    <table id="listPersons">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
     <script src="personsapi.js"></script>
 </body>
 </html>

@@ -152,6 +152,11 @@ Fetch API
 
 [JSON Server](https://github.com/typicode/json-server)
 
+- 8th session
+
+[JSON Server diagram](https://github.com/hamburgcodingschool/fullstack-2022-1_jsw/tree/main/docs/json-server-diagram.png)
+[JSON Web Tokens](https://jwt.io)
+
 ### ✏️ Homework
 
 - [JavaScript exercises](https://github.com/hamburgcodingschool/fullstack-2022-1_jsw/blob/main/homework/JavaScript_exercises)
@@ -164,6 +169,9 @@ Fetch API
 
 - [REST APIs](https://github.com/hamburgcodingschool/fullstack-2022-1_jsw/blob/main/homework/RESTAPI_exercises.md)
 
+### ✏️ Project
+
+- [Project](https://github.com/hamburgcodingschool/fullstack-2022-1_jsw/tree/main/project/project.md)
 
 ### 📄 Docs
 
