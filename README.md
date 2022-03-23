@@ -122,16 +122,18 @@ Functional programming
 - 5th session
 
 [Eloquent JavaScript](https://eloquentjavascript.net/)
+
 [JavaScript Tutorial](https://javascript.info/)
 
 REST APIs
 
 [What is a REST API?](https://www.youtube.com/watch?v=lsMQRaeKNDk)
+
 [Die Programmierschnittstelle (API - Application Programming Interface) erklärt](https://www.wrike.com/de/blog/programmierschnittstelle-api-erklaert/)
 
 [JSONPlaceHolder Fake REST API](https://jsonplaceholder.typicode.com/)
 
-[OpenWeatherMap REST API] (https://openweathermap.org/)
+[OpenWeatherMap REST API](https://openweathermap.org/)
 Create an account to get a Key.
 
 Fetch API
