@@ -166,6 +166,20 @@ Fetch API
 
 [JSON Web Tokens](https://jwt.io)
 
+- CSS Frameworks
+
+[State Of CSS - Information about CSS Frameworks](https://2021.stateofcss.com/en-US/technologies/css-frameworks)
+
+[Bootstrap](https://getbootstrap.com/)
+
+[ZURB Foundation](https://get.foundation/)
+
+[Bulma CSS](https://bulma.io/)
+
+[Tailwind CSS](https://tailwindcss.com/)
+
+[Materialize CSS](https://materializecss.com/)
+
 ### ✏️ Homework
 
 - [JavaScript exercises](https://github.com/hamburgcodingschool/fullstack-2022-1_jsw/blob/main/homework/JavaScript_exercises)
