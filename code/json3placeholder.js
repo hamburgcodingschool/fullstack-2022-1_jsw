@@ -32,7 +32,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
         // document.querySelector("body").innerHTML+=`<p>${json[pos].name}</p>`;
       // }
       for (let object of json) {
-        content+='<tr>';
+        content+=`<tr data-id="${object.id}">`;
         content+=`<td>${object.name}</td>`;
         content+=`<td>${object.email}</td>`;
         content+=`<td>${object.phone}</td>`;
@@ -46,6 +46,15 @@ fetch('https://jsonplaceholder.typicode.com/users')
       console.log(content);
       document.querySelector("#usersTable tbody").innerHTML=content;
       document.querySelector("#totalUsers").textContent=json.length;
+
+      let infolines=document.querySelectorAll("#usersTable tbody tr");
+      for (let line of infolines) {
+        line.addEventListener("click", function() {
+          let id=this.getAttribute("data-id");
+          // console.log(id);
+          window.location.href=`json4user.html?id=${id}`;
+        });
+      }
       console.log("PROCESSING DATA");
   })
   .catch(error => {
